@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118398220-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-118398220-2');
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wim Hof breathing method</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Karla:400,700" rel="stylesheet">
+    <meta name="theme-color" content="#97D5E0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdn.rawgit.com/husa/timer.js/e7ce7bca/dist/timer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Wim Hof breathing method<sup><a href="https://www.wimhofmethod.com/practice-the-method" id="linko" target="_blank"> &#9432;</a></sup></h1>
+            <h2>Made by <a href="http://www.sjoerd.design" target="_blank">Sjoerd Klatser</a></h2>
+        </div>
+    </header>
+    <main>
+        <div id="breathingCircle"></div>
+        <input value="0" type="text" id="breathCount" />
+        <div id="counter">
+            <span id="minutes"></span>:<span id="seconds"></span>
+        </div>
+        <form action="#" id="numberForm">
+            <input type="number" id="number" value="20">
+            <input type="submit" value="Set breath count" onclick="cookieBoi(this)">
+        </form>
+
+        <h3 id="holdBreath">When you feel the desire to breathe again, take a deep breath and hold for 10 seconds..</h3>
+        <h4 id="outBreath">Breathe out all the air in your lungs..</h4>
+    </main>
+    <div id="progressBar"></div>
+    <script src="core.js"></script>
+
+</body>
+
+</html>
